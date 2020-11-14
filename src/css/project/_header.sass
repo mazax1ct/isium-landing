@@ -1,0 +1,158 @@
+.header
+  left: 0
+  position: absolute
+  padding-top: 20px
+  padding-left: 15px
+  padding-right: 15px
+  right: 0
+  top: 0
+  z-index: 10
+
+  @media(min-width: 768px)
+    padding-left: 30px
+    padding-right: 30px
+
+  @media(min-width: 1200px)
+    padding-left: 60px
+    padding-right: 60px
+
+  @media(min-width: 1200px)
+    padding-top: 40px
+
+  &__inner
+    align-items: center
+    display: flex
+    justify-content: space-between
+    position: relative
+
+  &__logo
+    order: 2
+    width: 50px
+
+    @media(min-width: 768px)
+      margin-left: 100px
+      width: 101px
+
+  &__burger
+    align-items: center
+    background-color: transparent
+    border: none
+    color: #fff
+    cursor: pointer
+    display: flex
+    height: 48px
+    order: 1
+    padding: 0
+    width: 48px
+
+    @media(min-width: 768px)
+      height: 60px
+      width: 60px
+
+    &:focus
+      outline: 1px dotted
+
+  &__burger-icon
+    fill: #fff
+    height: 30px
+    width: 48px
+
+    @media(min-width: 768px)
+      width: 60px
+
+  &__enter
+    align-items: center
+    color: #fff
+    display: inline-flex
+    font-family: 'Gilroy', Arial, sans-serif
+    font-size: 16px
+    font-weight: 700
+    justify-content: center
+    line-height: 1.5
+    order: 3
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    vertical-align: middle
+    width: 48px
+
+    @media(min-width: 768px)
+      border: 2px solid #fff
+      border-radius: 8px
+      min-width: 160px
+      padding: 10px
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s
+
+    @media(min-width: 1900px)
+      height: 60px
+
+    &:hover
+      background-color: #fff
+      border-color: #fff
+      color: $main-color
+
+  &__enter-icon
+    fill: #fff
+    height: 30px
+    width: 30px
+
+    @media(min-width: 768px)
+      display: none
+
+  &__enter-text
+    display: none
+
+    @media(min-width: 768px)
+      display: block
+
+.menu
+  background-color: #fff
+  border-radius: 20px
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2)
+  display: none
+  left: 0
+  max-width: 320px
+  position: absolute
+  padding: 24px
+  top: 52px
+  width: 100%
+  z-index: 1
+
+  &.is-open
+    display: block
+
+  @media(min-width: 768px)
+    top: 90px
+
+  @media(min-width: 1900px)
+    border-radius: 30px
+    max-width: 500px
+    padding: 36px 44px 42px
+
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+
+  &__item
+    &:not(:last-child)
+      @media(min-width: 1900px)
+        margin-bottom: 25px
+
+  &__link
+    align-items: center
+    color: $main-color
+    display: flex
+    font-weight: 500
+    min-height: 42px
+    text-decoration: none
+    transition: all 0.3s
+
+    @media(min-width: 1900px)
+      font-size: 25px
+      line-height: 1.68
+
+    &.is-active,
+    &:hover
+      color: $secondary-color
+      font-weight: 600

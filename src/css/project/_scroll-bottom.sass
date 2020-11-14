@@ -1,0 +1,38 @@
+.scroll-bottom
+  background-color: transparent
+  border: none
+  bottom: 52px
+  color: #fff
+  cursor: pointer
+  display: none
+  font-size: 16px
+  font-weight: 600
+  line-height: 1.375
+  left: 50%
+  padding: 0
+  position: absolute
+  top: auto
+  transform: translateX(-50%)
+  text-align: center
+  z-index: 1
+
+  &:hover
+    .scroll-bottom__icon
+      transform: translateY(10px)
+
+  &:focus
+    outline: 1px dotted
+
+  @media(min-width: 768px)
+    display: block
+
+  &__icon
+    display: block
+    fill: $secondary-color
+    height: 53px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 18px
+    transition: transform 0.6s
+    will-change: transform
+    width: 16px

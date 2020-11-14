@@ -1,0 +1,44 @@
+.button
+  align-items: center
+  background-color: transparent
+  border: 2px solid #fff
+  border-radius: 8px
+  color: #fff
+  cursor: pointer
+  display: inline-flex
+  font-family: 'Gilroy', Arial, sans-serif
+  font-size: 16px
+  font-weight: 700
+  justify-content: center
+  line-height: 1.5
+  min-width: 160px
+  height: 48px
+  padding: 10px
+  text-decoration: none
+  text-align: center
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s
+  text-transform: uppercase
+  vertical-align: middle
+
+  @media(min-width: 1900px)
+    height: 60px
+
+  &:hover,
+  &:active
+    background-color: #fff
+    border-color: #fff
+    color: $main-color
+
+  &:disabled,
+  &.disabled
+    cursor: default
+    opacity: 0.5
+
+    &:focus
+      outline: none
+
+  &--type_2
+    background-color: $secondary-color
+    border-color: $secondary-color
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2)
+    color: $main-color

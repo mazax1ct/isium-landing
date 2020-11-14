@@ -1,0 +1,71 @@
+.footer
+  background-color: $main-color
+  color: $grey-color
+  padding-top: 30px
+  padding-bottom: 30px
+  text-align: center
+
+  @media(min-width: 768px)
+    text-align: left
+
+  @media(min-width: 1200px)
+    padding-top: 57px
+    padding-bottom: 56px
+
+  &__inner
+    padding-left: 15px
+    padding-right: 15px
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      padding-left: 30px
+      padding-right: 30px
+
+    @media(min-width: 1200px)
+      padding-left: 60px
+      padding-right: 60px
+
+  &__logo,
+  &__email
+    margin-bottom: 1em
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+  &__logo
+    margin-left: auto
+    margin-right: auto
+    width: 130px
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+
+    @media(min-width: 1900px)
+      width: 155px
+
+  &__email
+    @media(min-width: 768px)
+      margin-left: auto
+      margin-right: auto
+
+    @media(min-width: 1200px)
+      margin-left: 295px
+    a
+      color: #fff
+      text-decoration: none
+
+    br
+      @media(min-width: 1200px)
+        display: none
+
+  &__link
+    @media(min-width: 768px)
+      margin-left: auto
+
+    @media(min-width: 1900px)
+      font-size: 20px
+
+    a
+      color: $grey-color

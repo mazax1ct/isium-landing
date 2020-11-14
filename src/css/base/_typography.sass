@@ -1,0 +1,78 @@
+body
+  color: $main-color
+  font-family: 'Gilroy', Arial, sans-serif
+  font-size: 16px
+  font-weight: 600
+  line-height: 1.5
+  -webkit-font-smoothing: antialiased
+
+  @media(min-width: 1200px)
+    font-size: 18px
+
+  @media(min-width: 1900px)
+    font-size: 24px
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6
+  font-weight: 700
+
+h1,.h1,
+h2,.h2
+  font-size: 10vw
+  line-height: calc(10vw + 6px)
+  margin-top: 0
+  margin-bottom: calc(10vw * 0.75 - 12px)
+
+  @media(min-width: 540px)
+    font-size: 54px
+    line-height: 1.1
+    margin-bottom: 0.5325em
+
+  @media(min-width: 1200px)
+    font-size: 6vw
+    line-height: 1
+
+  @media(min-width: 1500px)
+    font-size: 90px
+    line-height: 1
+    margin-bottom: 0.66666em
+
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6,
+p,
+ul,
+ol,
+table,
+.table-responsive
+  margin-top: 0
+  margin-bottom: 0.75em
+
+  @media(min-width: 1900px)
+    margin-bottom: 1.5em
+
+  &:last-child
+    margin-bottom: 0
+
+table
+  border-collapse: collapse
+  max-width: 100%
+  text-align: left
+  width: 100%
+
+  th,
+  td
+    border: none
+    border-bottom: 1px solid
+    padding: 10px
+    vertical-align: top
+
+img
+  height: auto
+  max-width: 100%
+  vertical-align: top
