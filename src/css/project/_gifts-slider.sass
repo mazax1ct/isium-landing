@@ -1,0 +1,24 @@
+.gifts-slider
+  .swiper-slide
+    max-width: 580px
+    opacity: 0.15
+    transition: opacity 0.3s
+    width: 60%
+
+    @media(min-width: 768px)
+      width: 30%
+
+    &.swiper-slide-active,
+    &.swiper-slide-prev,
+    &.swiper-slide-next
+      opacity: 1
+
+  .slider-nav
+    margin-top: 20px
+
+  .slider-nav__button
+    &:hover
+      color: $main-color
+
+      .slider-nav__button-icon
+        fill: $main-color

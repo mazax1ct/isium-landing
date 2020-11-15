@@ -1,0 +1,89 @@
+.analytic-slider
+  &__slide
+    box-sizing: border-box
+    margin-left: auto
+    margin-right: auto
+    max-width: 1300px
+    padding-left: 15px
+    padding-right: 15px
+
+    @media(min-width: 600px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+    @media(min-width: 768px)
+      padding-left: 30px
+      padding-right: 30px
+
+  &__slide-image
+    display: none
+
+    @media(min-width: 600px)
+      display: block
+      max-width: 820px
+      padding-right: 50px
+      width: 90%
+
+    @media(min-width: 1200px)
+      padding-right: 100px
+
+  &__slide-info
+    max-width: 360px
+
+  &__slide-num
+    align-items: center
+    background-color: $secondary-color
+    border-radius: 50%
+    color: #fff
+    display: flex
+    font-size: 18px
+    font-weight: 700
+    height: 40px
+    justify-content: center
+    margin-bottom: 1em
+    width: 40px
+
+    @media(min-width: 1200px)
+      margin-bottom: 1.66666em
+
+  &__slide-title
+    font-size: 24px
+    line-height: 1.41666
+    margin-bottom: 0.83333em
+
+  &__slide-text
+    color: #4E7484
+    font-size: 18px
+    font-weight: 500
+    line-height: 1.66666
+    margin-bottom: 2.22222em
+
+  &__nav
+    display: flex
+    padding-bottom: 5px
+
+  &__button
+    align-items: center
+    background-color: #fff
+    box-shadow: 0 2px 5px 0 rgba(#000, 0.15)
+    border-radius: 50%
+    border: none
+    cursor: pointer
+    display: flex
+    height: 60px
+    justify-content: center
+    padding: 0
+    transition: transform 0.3s
+    width: 60px
+
+    &:hover
+      transform: translateY(-5px)
+
+    &:not(:last-child)
+      margin-right: 30px
+
+  &__button-icon
+    fill: $grey-color
+    height: 16px
+    width: 26px

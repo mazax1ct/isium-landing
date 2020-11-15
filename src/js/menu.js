@@ -2,7 +2,6 @@ function menuClose(evt) {
   if (!$('.menu').is(evt.target) && $('.menu').has(evt.target).length === 0) {
     $('.menu').removeClass('is-open');
     document.removeEventListener('click', menuClose);
-    console.log('удаляем');
   }
 };
 
@@ -12,7 +11,6 @@ $(document).on('click', '.js-menu-toggler', function () {
   } else {
     $('.menu').addClass('is-open');
     document.addEventListener('click', menuClose);
-    console.log('добавляем');
   }
   return false;
 });

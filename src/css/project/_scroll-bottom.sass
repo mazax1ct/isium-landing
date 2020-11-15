@@ -16,10 +16,6 @@
   text-align: center
   z-index: 2
 
-  &:hover
-    .scroll-bottom__icon
-      transform: translateY(10px)
-
   &:focus
     outline: 1px dotted
 
@@ -36,9 +32,17 @@
     margin-left: auto
     margin-right: auto
     margin-bottom: 18px
-    transition: transform 0.6s
+    transition: transform 0.8s
     will-change: transform
+    animation: move 0.8s infinite linear
     width: 16px
 
     @media(min-height: 768px)
       height: 53px
+
+@keyframes move
+  0%
+    transform: translateY(0)
+
+  50%
+    transform: translateY(10px)

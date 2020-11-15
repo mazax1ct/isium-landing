@@ -35,9 +35,9 @@
 
     <div class="page__section block-3">
       <div class="container">
-        <h2>Для кого?</h2>
-        <p>Людям, развивающим продажи и маркетинг</p>
-        <ol class="list-1">
+        <h2 class="animate-scroll">Для кого?</h2>
+        <p class="animate-scroll">Людям, развивающим продажи и маркетинг</p>
+        <ol class="animate-scroll list-1">
           <li class="list-1__item">
             <div class="card-2">
               <p class="card-2__image"><img src="images/content/for/img_1.svg" alt=""></p>
@@ -60,30 +60,232 @@
       </div>
     </div>
 
-    <div class="page__section page__section--back block-4">
+    <div class="page__section page__section--back block-4 block-4--overlayed">
+      <div class="block-4__video-block hidden">
+        <video id="video" class="block-4__video">
+          <source src="http://isium.net/landing/resources/Isium_Full.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div class="block-4__inner container">
-        <p><a class="block-4__button button" href="#">Смотреть видео</a></p>
+        <div class="block-4__video-play">
+          <div class="block-4__video-logo"><img src="images/content/video/logo.png" alt=""></div>
+          <button class="js-play block-4__button button" type="button">Смотреть видео</button>
+        </div>
       </div>
     </div>
 
     <div class="page__section">
       <div class="container">
-        <h2>Маркетинг будущего</h2>
-
+        <h2 class="animate-scroll">Маркетинг будущего</h2>
+        <ul class="animate-scroll list-2">
+          <li class="list-2__item">
+            <div class="feature">
+              <div class="feature__image"><img src="images/content/marketing/img_1.svg" alt="alt"></div>
+              <p class="feature__text">Вы четко знаете, почему именно тот или иной клиент выбрал вашу&nbsp;компанию</p>
+            </div>
+          </li>
+          <li class="list-2__item">
+            <div class="feature">
+              <div class="feature__image"><img src="images/content/marketing/img_4.svg" alt="alt"></div>
+              <p class="feature__text">Получите обратную связь, чем&nbsp;недовольные ваши клиенты</p>
+            </div>
+          </li>
+          <li class="list-2__item">
+            <div class="feature">
+              <div class="feature__image"><img src="images/content/marketing/img_2.svg" alt="alt"></div>
+              <p class="feature__text">Можете выявить основные причины вашего успеха</p>
+            </div>
+          </li>
+          <li class="list-2__item">
+            <div class="feature">
+              <div class="feature__image"><img src="images/content/marketing/img_5.svg" alt="alt"></div>
+              <p class="feature__text">Услышите от клиентов, как вы могли бы стать для них лучшим</p>
+            </div>
+          </li>
+          <li class="list-2__item">
+            <div class="feature">
+              <div class="feature__image"><img src="images/content/marketing/img_3.svg" alt="alt"></div>
+              <p class="feature__text">Обсудите с клиентами свои гипотезы до их реализации в&nbsp;продукты</p>
+            </div>
+          </li>
+          <li class="list-2__item">
+            <div class="feature">
+              <div class="feature__image"><img src="images/content/marketing/img_6.svg" alt="alt"></div>
+              <p class="feature__text">Поблагодарите клиентов и заручитесь их поддержкой в&nbsp;будущем</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="page__section page__section--dark">
-      <div class="container">
-        <h2>Слайдер</h2>
+      <div class="animate-scroll container">
+        <div class="slider-pager">
+          <div class="slider-pager__count">
+            <span class="js-count">1</span> / <span>5</span>
+          </div>
+          <div class="js-gifts-pagination swiper-pagination"></div>
+        </div>
 
+        <div class="js-slider slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider-slide">
+                <div class="slider-slide__text">
+                  <h2>Настройка<br> портала</h2>
+                  <p>Вы описываете ценности компании – то, что отличает вашу компанию от других и является конкурентным преимуществом. Формируете гипотезы – направления, которые вы планируете развивать и хотите заранее заручиться поддержкой клиентов.</p>
+                </div>
+                <div class="slider-slide__image"><img width="331" height="463" src="images/content/slider/img_1.svg" alt="alt"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide">
+                <div class="slider-slide__text">
+                  <h2>Синхронизация</h2>
+                  <p>Клиенты получают доступ к сайту или VR-среде в зависимости от выбранного тарифа. В режиме онлайн каждый клиент последовательно оценивает преимущества вашей компании, описывает, какие улучшения или изменения помогли бы его бизнесу. В знак благодарности за участие в развитии бизнеса, клиент выбирает подарок.</p>
+                </div>
+                <div class="slider-slide__image"><img width="453" height="457" src="images/content/slider/img_2.svg" alt="alt"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide">
+                <div class="slider-slide__text">
+                  <h2>Аналитика<br> данных</h2>
+                  <p>От клиентов вы получаете оценку существующих ценностей и гипотез развития, с пожеланиями и замечаниями. Аналитика структурирует клиентскую базу по уровню лояльности, проблемности и формирует план действия для повышения удовлетворенности клиентов.</p>
+                </div>
+                <div class="slider-slide__image"><img width="331" height="463" src="images/content/slider/img_3.svg" alt="alt"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide">
+                <div class="slider-slide__text">
+                  <h2>Развитие<br> бизнеса</h2>
+                  <p>Вы обрабатываете обратную связь от клиентов – принимаете управленческие решения по устранению проблем, развиваете бизнес под потребности клиентов, улучшаете качество реализации значимых для клиентов ценностей. Также вы формируете новыe ценности для тех клиентов, которые мало заинтересованы в существующих.</p>
+                </div>
+                <div class="slider-slide__image"><img width="331" height="463" src="images/content/slider/img_4.svg" alt="alt"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-slide">
+                <div class="slider-slide__text">
+                  <h2>Последующие<br> синхронизации</h2>
+                  <p> После обработки обратной связи, ISIUM формирует для каждого клиента индивидуальное представление о вашей компании. Клиенты видят, каким образом были учтены их пожелания. С каждой синхронизацией вы все лучше настраиваете бизнес под индивидуальные пожелания клиентов.</p>
+                </div>
+                <div class="slider-slide__image"><img width="409" height="480" src="images/content/slider/img_5.svg" alt="alt"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-nav">
+          <button class="js-swiper-button-prev slider-nav__button">
+            <svg class="slider-nav__button-icon"><use xlink:href="#arrow-left"></use></svg><span class="slider-nav__button-text">НАЗАД</span>
+          </button>
+          <button class="js-swiper-button-next slider-nav__button">
+            <span class="slider-nav__button-text">ДАЛЕЕ</span><svg class="slider-nav__button-icon"><use xlink:href="#arrow-right"></use></svg>
+          </button>
+        </div>
       </div>
     </div>
 
     <div class="page__section">
       <div class="container">
-        <h2>Получаемая аналитика</h2>
-
+        <h2 class="animate-scroll">Получаемая аналитика</h2>
+      </div>
+      <div class="animate-scroll js-analytic-slider analytic-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="analytic-slider__slide">
+              <div class="analytic-slider__slide-image"><img src="images/content/analytic/img_1.jpg" alt="alt"></div>
+              <div class="analytic-slider__slide-info">
+                <p class="analytic-slider__slide-num">01</p>
+                <h3 class="analytic-slider__slide-title">Понимание, что действительно<br> важно для клиентов.</h3>
+                <p class="analytic-slider__slide-text">Сравнение влияния различных УТП на&nbsp;клиентов между собой.</p>
+                <div class="analytic-slider__nav">
+                  <button class="js-swiper-button-prev-2  analytic-slider__button" title="Назад">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-left-small"></use></svg>
+                  </button>
+                  <button class="js-swiper-button-next-2 analytic-slider__button" title="Вперёд">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-right-small"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="analytic-slider__slide">
+              <div class="analytic-slider__slide-image"><img src="images/content/analytic/img_1.jpg" alt="alt"></div>
+              <div class="analytic-slider__slide-info">
+                <p class="analytic-slider__slide-num">02</p>
+                <h3 class="analytic-slider__slide-title">Понимание, что действительно<br> важно для клиентов.</h3>
+                <p class="analytic-slider__slide-text">Сравнение влияния различных УТП на&nbsp;клиентов между собой.</p>
+                <div class="analytic-slider__nav">
+                  <button class="js-swiper-button-prev-2  analytic-slider__button" title="Назад">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-left-small"></use></svg>
+                  </button>
+                  <button class="js-swiper-button-next-2 analytic-slider__button" title="Вперёд">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-right-small"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="analytic-slider__slide">
+              <div class="analytic-slider__slide-image"><img src="images/content/analytic/img_1.jpg" alt="alt"></div>
+              <div class="analytic-slider__slide-info">
+                <p class="analytic-slider__slide-num">03</p>
+                <h3 class="analytic-slider__slide-title">Понимание, что действительно<br> важно для клиентов.</h3>
+                <p class="analytic-slider__slide-text">Сравнение влияния различных УТП на&nbsp;клиентов между собой.</p>
+                <div class="analytic-slider__nav">
+                  <button class="js-swiper-button-prev-2  analytic-slider__button" title="Назад">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-left-small"></use></svg>
+                  </button>
+                  <button class="js-swiper-button-next-2 analytic-slider__button" title="Вперёд">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-right-small"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="analytic-slider__slide">
+              <div class="analytic-slider__slide-image"><img src="images/content/analytic/img_1.jpg" alt="alt"></div>
+              <div class="analytic-slider__slide-info">
+                <p class="analytic-slider__slide-num">04</p>
+                <h3 class="analytic-slider__slide-title">Понимание, что действительно<br> важно для клиентов.</h3>
+                <p class="analytic-slider__slide-text">Сравнение влияния различных УТП на&nbsp;клиентов между собой.</p>
+                <div class="analytic-slider__nav">
+                  <button class="js-swiper-button-prev-2  analytic-slider__button" title="Назад">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-left-small"></use></svg>
+                  </button>
+                  <button class="js-swiper-button-next-2 analytic-slider__button" title="Вперёд">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-right-small"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="analytic-slider__slide">
+              <div class="analytic-slider__slide-image"><img src="images/content/analytic/img_1.jpg" alt="alt"></div>
+              <div class="analytic-slider__slide-info">
+                <p class="analytic-slider__slide-num">05</p>
+                <h3 class="analytic-slider__slide-title">Понимание, что действительно<br> важно для клиентов.</h3>
+                <p class="analytic-slider__slide-text">Сравнение влияния различных УТП на&nbsp;клиентов между собой.</p>
+                <div class="analytic-slider__nav">
+                  <button class="js-swiper-button-prev-2  analytic-slider__button" title="Назад">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-left-small"></use></svg>
+                  </button>
+                  <button class="js-swiper-button-next-2 analytic-slider__button" title="Вперёд">
+                    <svg class="analytic-slider__button-icon"><use xlink:href="#arrow-right-small"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -91,9 +293,8 @@
 
     <div class="page__section">
       <div class="container">
-        <h2>Тарифы</h2>
-
-        <ol class="list-1">
+        <h2 class="animate-scroll">Тарифы</h2>
+        <ol class="animate-scroll list-1">
           <li class="list-1__item">
             <div class="tarif">
               <p class="tarif__title">Сто</p>
@@ -130,29 +331,88 @@
 
     <div class="page__section page__section--dark">
       <div class="container">
-        <h2>Выгоды</h2>
-
+        <h2 class="animate-scroll">Выгоды</h2>
+        <div class="animate-scroll benefits">
+          <div class="benefits__list">
+            <div class="benefit">
+              <div class="benefit__image"><img src="images/content/benefits/img_1.svg" alt="alt"></div>
+              <div class="benefit__info">
+                <h3>В своей CRM вы смотрите на своих клиентов с точки зрения денег:</h3>
+                <p>Вы прогнозируете сделки, суммы, вероятности и даты получения денег.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__image"><img src="images/content/benefits/img_2.svg" alt="alt"></div>
+              <div class="benefit__info">
+                <h3>В <span class="color-green">ISIUM</span> вы смотрите на своих клиентов с&nbsp;точки зрения психологии:</h3>
+                <p>Вы оцифровываете уровень лояльности каждого клиента и можете этим управлять. После проведения первой синхронизации вы узнаете, какие из клиентов могут в ближайшее время покинуть список ваших заказчиков, а кто является вам лояльным.</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__note">
+            <p>В дальнейшем вы наблюдаете динамику изменения уровня лояльности, в зависимости от того, как вы развиваете свой бизнес. Проверяйте свои гипотезы, читайте комментарии клиентов, реализуйте их идеи - и тем самым повышайте цифровые индикаторы лояльности!</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="page__section">
       <div class="container">
-        <h2>Подарки</h2>
+        <h2 class="animate-scroll">Подарки</h2>
+      </div>
+      <div class="animate-scroll js-gifts-slider gifts-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/content/gifts/img_1.jpg" alt="alt"></div>
+          <div class="swiper-slide"><img src="images/content/gifts/img_2.jpg" alt="alt"></div>
+          <div class="swiper-slide"><img src="images/content/gifts/img_1.jpg" alt="alt"></div>
+          <div class="swiper-slide"><img src="images/content/gifts/img_2.jpg" alt="alt"></div>
+          <div class="swiper-slide"><img src="images/content/gifts/img_1.jpg" alt="alt"></div>
+          <div class="swiper-slide"><img src="images/content/gifts/img_2.jpg" alt="alt"></div>
+        </div>
 
+        <div class="container">
+          <div class="slider-nav">
+            <button class="js-swiper-button-prev-3 slider-nav__button">
+              <svg class="slider-nav__button-icon"><use xlink:href="#arrow-left"></use></svg><span class="slider-nav__button-text">НАЗАД</span>
+            </button>
+            <button class="js-swiper-button-next-3 slider-nav__button">
+              <span class="slider-nav__button-text">ДАЛЕЕ</span><svg class="slider-nav__button-icon"><use xlink:href="#arrow-right"></use></svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="page__section page__section--dark">
       <div class="container">
-        <h2>Благодарные клиенты</h2>
-
+        <h2 class="animate-scroll">Благодарные клиенты</h2>
+        <ul class="animate-scroll list-3">
+          <li class="list-3__item">
+            <div class="feature-2">
+              <div class="feature-2__image feature-2__image--type_1"><img src="images/content/clients/img_1.svg" alt="alt"></div>
+              <p class="feature-2__text">Забудьте о телефонных обзвонах своих клиентов или просьб заполнить анкеты! Это ничего кроме раздражения не вызывает!</p>
+            </div>
+          </li>
+          <li class="list-3__item">
+            <div class="feature-2">
+              <div class="feature-2__image feature-2__image--type_2"><img src="images/content/clients/img_2.svg" alt="alt"></div>
+              <p class="feature-2__text">Обратитесь к своему клиенту с предложением адаптировать свой сервис под его потребности. Ему это будет намного приятнее выстроить ваш сервис под себя, чем наблюдать, как вы пытаетесь ему продавать то, что ему не нужно.</p>
+            </div>
+          </li>
+          <li class="list-3__item">
+            <div class="feature-2">
+              <div class="feature-2__image feature-2__image--type_3"><img src="images/content/clients/img_3.svg" alt="alt"></div>
+              <p class="feature-2__text">Ваше взаимодействие с клиентом строится через благодарность. Вам достаточно сегментировать клиентов по ценовым категориям подарков. Клиент видит каталог подарков (не видит их цен) и может выбрать тот, который нравится лично ему. Он сам указывает где и когда ему было бы удобно получить подарок. Он также может направить подарок от своего лица члену своей семьи или другу.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="page__section form-section">
       <div class="container">
-        <h2>Оставить заявку</h2>
-        <div class="form">
+        <h2 class="animate-scroll">Оставить заявку</h2>
+        <div class="animate-scroll form">
           <div class="form__row">
             <div class="form__cell">
               <label class="form__label">

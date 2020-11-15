@@ -82,12 +82,16 @@
       height: 60px
       min-width: 160px
       padding: 10px
-      transition: background-color 0.3s, border-color 0.3s, color 0.3s      
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s, transform 0.3s
 
     &:hover
       background-color: #fff
       border-color: #fff
       color: $main-color
+
+    &:active
+      @media(min-width: 768px)
+        transform: translateY(3px)
 
   &__enter-icon
     fill: #fff

@@ -1,0 +1,33 @@
+.feature-2
+  border-bottom: 1px solid $secondary-color
+  display: flex
+  flex-direction: column
+  font-size: 16px
+  font-weight: 500
+  line-height: 1.625
+  max-width: 320px
+  padding-bottom: 60px
+
+  @media(min-width: 1024px)
+    padding-bottom: 100px
+
+  &__image
+    border-radius: 30px
+    background-image: linear-gradient(rgba(#2FFFA8, 0.08), rgba($main-color, 0.1))
+    margin-bottom: 66px
+    text-align: center
+
+    &--type_1
+      padding-top: 40px
+      padding-bottom: 40px
+
+    &--type_2
+      padding-top: 30px
+      padding-bottom: 30px
+
+    &--type_3
+      padding-top: 18px
+      padding-bottom: 18px
+
+  &__text
+    margin-top: auto

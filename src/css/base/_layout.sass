@@ -51,3 +51,12 @@ html
   @media(min-width: 768px)
     padding-left: 30px
     padding-right: 30px
+
+.animate-scroll
+  opacity: 0
+  transition: opacity 0.5s, transform 0.5s
+  transform: translateY(-20px)
+
+  &.visible
+    opacity: 1
+    transform: translateY(0)
