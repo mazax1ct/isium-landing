@@ -1,7 +1,7 @@
 .scroll-bottom
   background-color: transparent
   border: none
-  bottom: 52px
+  bottom: 20px
   color: #fff
   cursor: pointer
   display: none
@@ -14,7 +14,7 @@
   top: auto
   transform: translateX(-50%)
   text-align: center
-  z-index: 1
+  z-index: 2
 
   &:hover
     .scroll-bottom__icon
@@ -23,16 +23,22 @@
   &:focus
     outline: 1px dotted
 
-  @media(min-width: 768px)
+  @media(min-height: 568px)
     display: block
+
+  @media(min-height: 768px)
+    bottom: 52px
 
   &__icon
     display: block
     fill: $secondary-color
-    height: 53px
+    height: 36px
     margin-left: auto
     margin-right: auto
     margin-bottom: 18px
     transition: transform 0.6s
     will-change: transform
     width: 16px
+
+    @media(min-height: 768px)
+      height: 53px
