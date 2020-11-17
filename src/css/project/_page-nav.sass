@@ -1,0 +1,85 @@
+.page-nav
+  position: absolute
+  left: 0
+  top: 0
+  bottom: 0
+  width: 30px
+  overflow: hidden
+  clip: rect(0,auto,auto,0)
+
+  @media(min-width: 1500px)
+    width: 90px
+
+  &__menu
+    left: 0
+    position: fixed
+    top: 50%
+    transform: translateY(-50%)
+    width: 30px
+    display: flex
+    align-items: center
+    z-index: 99
+
+    @media(min-width: 1500px)
+      width: 90px
+
+  &__list
+    list-style: none
+    margin: 0
+    position: absolute
+    padding: 0
+
+    &--light
+      .page-nav__link
+        &::after
+          background-color: rgba($main-color, 0.3)
+
+      .page-nav__link--active
+        &::after
+          background-color: $main-color
+
+    &--dark
+      .page-nav__link
+        &::after
+          background-color: #fff
+
+      .page-nav__link--active
+        &::after
+          background-color: $secondary-color
+
+  &__item
+
+  &__link
+    display: block
+    width: 30px
+    height: 50px
+    font-size: 0
+    position: relative
+    transition: all .3s ease
+
+    @media(min-width: 1500px)
+      width: 90px
+
+    &::after
+      background-color: #fff
+      content: ''
+      height: 4px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      transition: all 0.3s
+      width: 4px
+
+    &:not(.page-nav__link--active)
+      &:hover
+        &::after
+          @media(min-width: 1500px)
+            margin-left: 10px
+
+
+    &--active
+      &::after
+        @media(min-width: 1500px)
+          transform: skewX(30deg)
+          width: 30px

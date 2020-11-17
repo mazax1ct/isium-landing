@@ -17,13 +17,13 @@
   //= template/style.html
 </head>
 
-<body class="page">
+<body class="page loading">
   //= template/sprite.html
 
   //= template/header.html
 
   <div class="page__content">
-    <div class="page__section page__section--back block-2">
+    <div id="section_1" class="page__section page__section--dark page__section--back block-2">
       <div class="block-2__inner container">
         <h1 class="block-2__title">Лояльные клиенты</h1>
         <img class="block-2__image" src="images/content/loyal/logo.png" alt="ISIUM">
@@ -33,7 +33,7 @@
       <button class="js-scroll-bottom scroll-bottom" type="button"><svg class="scroll-bottom__icon"><use xlink:href="#arrow-down"></use></svg>СКРОЛЬТЕ<br> ВНИЗ</button>
     </div>
 
-    <div class="page__section block-3">
+    <div id="section_2" class="page__section block-3">
       <div class="container">
         <h2 class="animate-scroll">Для кого?</h2>
         <p class="animate-scroll">Людям, развивающим продажи и маркетинг</p>
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div class="page__section page__section--back block-4 block-4--overlayed">
+    <div id="section_3" class="page__section page__section--dark page__section--back block-4 block-4--overlayed">
       <div class="block-4__video-block hidden">
         <video id="video" class="block-4__video">
           <source src="http://isium.net/landing/resources/Isium_Full.mp4" type="video/mp4">
@@ -75,7 +75,7 @@
       </div>
     </div>
 
-    <div class="page__section">
+    <div id="section_4" class="page__section">
       <div class="container">
         <h2 class="animate-scroll">Маркетинг будущего</h2>
         <ul class="animate-scroll list-2">
@@ -119,7 +119,7 @@
       </div>
     </div>
 
-    <div class="page__section page__section--dark">
+    <div id="section_5" class="page__section page__section--dark">
       <div class="animate-scroll container">
         <div class="slider-pager">
           <div class="slider-pager__count">
@@ -189,7 +189,7 @@
       </div>
     </div>
 
-    <div class="page__section">
+    <div id="section_6" class="page__section">
       <div class="container">
         <h2 class="animate-scroll">Получаемая аналитика</h2>
       </div>
@@ -291,7 +291,7 @@
 
     <hr>
 
-    <div class="page__section">
+    <div id="section_7" class="page__section">
       <div class="container">
         <h2 class="animate-scroll">Тарифы</h2>
         <ol class="animate-scroll list-1">
@@ -329,7 +329,7 @@
       </div>
     </div>
 
-    <div class="page__section page__section--dark">
+    <div id="section_8" class="page__section page__section--dark">
       <div class="container">
         <h2 class="animate-scroll">Выгоды</h2>
         <div class="animate-scroll benefits">
@@ -356,7 +356,7 @@
       </div>
     </div>
 
-    <div class="page__section">
+    <div id="section_9" class="page__section">
       <div class="container">
         <h2 class="animate-scroll">Подарки</h2>
       </div>
@@ -383,7 +383,7 @@
       </div>
     </div>
 
-    <div class="page__section page__section--dark">
+    <div id="section_10" class="page__section page__section--dark">
       <div class="container">
         <h2 class="animate-scroll">Благодарные клиенты</h2>
         <ul class="animate-scroll list-3">
@@ -442,6 +442,8 @@
   </div>
 
   //= template/footer.html
+
+  //= template/preloader.html
 
   //= template/scripts.html
 </body>

@@ -1,6 +1,8 @@
 $(document).ready(function () {
-  $('.animate-scroll').addClass("hidden").viewportChecker({
-    classToAdd: 'visible',
-    offset: 200
-  });
+  if($('body').width() > 1200) {
+    $('.animate-scroll').addClass("hidden").viewportChecker({
+      classToAdd: 'visible',
+      offset: 200
+    });
+  }
 });

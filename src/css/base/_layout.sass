@@ -8,6 +8,10 @@ html
 *::before
   box-sizing: inherit
 
+body
+  &.loadeing
+    background-color: $main-color
+
 .page
   display: flex
   flex-direction: column
@@ -19,8 +23,10 @@ html
     flex: 1 0 auto
 
   &__section
+    overflow: hidden
     padding-top: calc(5vw + 30px)
     padding-bottom: calc(5vw + 30px)
+    position: relative
 
     @media(min-width: 1500px)
       padding-top: 100px
@@ -53,10 +59,12 @@ html
     padding-right: 30px
 
 .animate-scroll
-  opacity: 0
-  transition: opacity 0.5s, transform 0.5s
-  transform: translateY(-20px)
+  @media(min-width: 1200px)
+    opacity: 0
+    transition: opacity 0.5s, transform 0.5s
+    transform: translateY(-20px)
 
   &.visible
-    opacity: 1
-    transform: translateY(0)
+    @media(min-width: 1200px)
+      opacity: 1
+      transform: translateY(0)

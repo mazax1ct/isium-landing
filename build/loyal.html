@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body class="page">
+<body class="page loading">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="burger" viewBox="0 0 60 30">
       <g>
@@ -86,7 +86,7 @@
   </header>
 
   <div class="page__content">
-    <div class="page__section page__section--back block-2">
+    <div id="section_1" class="page__section page__section--dark page__section--back block-2">
       <div class="block-2__inner container">
         <h1 class="block-2__title">Лояльные клиенты</h1>
         <img class="block-2__image" src="images/content/loyal/logo.png" alt="ISIUM">
@@ -96,7 +96,7 @@
       <button class="js-scroll-bottom scroll-bottom" type="button"><svg class="scroll-bottom__icon"><use xlink:href="#arrow-down"></use></svg>СКРОЛЬТЕ<br> ВНИЗ</button>
     </div>
 
-    <div class="page__section block-3">
+    <div id="section_2" class="page__section block-3">
       <div class="container">
         <h2 class="animate-scroll">Для кого?</h2>
         <p class="animate-scroll">Людям, развивающим продажи и маркетинг</p>
@@ -123,7 +123,7 @@
       </div>
     </div>
 
-    <div class="page__section page__section--back block-4 block-4--overlayed">
+    <div id="section_3" class="page__section page__section--dark page__section--back block-4 block-4--overlayed">
       <div class="block-4__video-block hidden">
         <video id="video" class="block-4__video">
           <source src="http://isium.net/landing/resources/Isium_Full.mp4" type="video/mp4">
@@ -138,7 +138,7 @@
       </div>
     </div>
 
-    <div class="page__section">
+    <div id="section_4" class="page__section">
       <div class="container">
         <h2 class="animate-scroll">Маркетинг будущего</h2>
         <ul class="animate-scroll list-2">
@@ -182,7 +182,7 @@
       </div>
     </div>
 
-    <div class="page__section page__section--dark">
+    <div id="section_5" class="page__section page__section--dark">
       <div class="animate-scroll container">
         <div class="slider-pager">
           <div class="slider-pager__count">
@@ -252,7 +252,7 @@
       </div>
     </div>
 
-    <div class="page__section">
+    <div id="section_6" class="page__section">
       <div class="container">
         <h2 class="animate-scroll">Получаемая аналитика</h2>
       </div>
@@ -354,7 +354,7 @@
 
     <hr>
 
-    <div class="page__section">
+    <div id="section_7" class="page__section">
       <div class="container">
         <h2 class="animate-scroll">Тарифы</h2>
         <ol class="animate-scroll list-1">
@@ -392,7 +392,7 @@
       </div>
     </div>
 
-    <div class="page__section page__section--dark">
+    <div id="section_8" class="page__section page__section--dark">
       <div class="container">
         <h2 class="animate-scroll">Выгоды</h2>
         <div class="animate-scroll benefits">
@@ -419,7 +419,7 @@
       </div>
     </div>
 
-    <div class="page__section">
+    <div id="section_9" class="page__section">
       <div class="container">
         <h2 class="animate-scroll">Подарки</h2>
       </div>
@@ -446,7 +446,7 @@
       </div>
     </div>
 
-    <div class="page__section page__section--dark">
+    <div id="section_10" class="page__section page__section--dark">
       <div class="container">
         <h2 class="animate-scroll">Благодарные клиенты</h2>
         <ul class="animate-scroll list-3">
@@ -512,7 +512,19 @@
     </div>
   </footer>
 
+  <div class="preloader">
+    <div class="preloader__spinner">
+      <div class="preloader__cube-wrapper">
+        <div class="preloader__cube"></div>
+        <div class="preloader__cube preloader__cube--2"></div>
+        <div class="preloader__cube preloader__cube--4"></div>
+        <div class="preloader__cube preloader__cube--3"></div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/page-nav.js"></script>
   <script src="js/jquery.viewportchecker.min.js"></script>
   <script src="js/vpc.js"></script>
   <script src="js/menu.js"></script>
@@ -522,6 +534,7 @@
   <script src="js/slider.js"></script>
   <script src="js/analytic-slider.js"></script>
   <script src="js/gifts-slider.js"></script>
+  <script src="js/preloader.js"></script>
 </body>
 
 </html>
